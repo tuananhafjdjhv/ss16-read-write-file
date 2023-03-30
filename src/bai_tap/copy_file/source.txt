@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #f1f1f1;
+		}
+		.container {
+			margin: 100px auto;
+			width: 80%;
+			max-width: 400px;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+		.cancelbtn {
+			background-color: #f44336;
+		}
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+		.container > h2 {
+			text-align: center;
+			color: #333;
+		}
+		.error {
+			color: red;
+			font-size: 12px;
+			display: block;
+			margin-top: 5px;
+		}
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+		@media screen and (max-width: 600px) {
+			.container {
+				margin-top: 50px;
+				max-width: 100%;
+			}
+			.container > h2 {
+				font-size: 24px;
+			}
+			img.avatar {
+				width: 30%;
+			}
+			button {
+				padding: 10px 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Login Form</h2>
+		<form action="process-login.php" method="post">
+			<div class="imgcontainer">
+				<img src="avatar.png" alt="Avatar" class="avatar">
+			</div>
+			<div>
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" required>
+			</div>
+			<div>
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required>
+			</div>
+			<div>
+				<button type="submit">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+			<div>
+				<a href="#">Forgot
+</body>
+</html>
